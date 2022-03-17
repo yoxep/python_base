@@ -1,0 +1,24 @@
+def mjb():
+    game=input("묵 찌 빠 중 하나를 내주세요, 종료하시려면 엔터를 눌러주세요")
+    if game == "묵":
+        print("묵을 내셨습니다")
+        mjb()
+    
+    elif game == "찌":
+        print("찌를 내셨습니다")
+        mjb()
+    
+    elif game == "빠":
+        print("빠를 내셨습니다")
+        mjb()
+    
+    elif game == "":
+        print("종료합니다")
+ #엔터누르면 종료
+    
+    else :
+        print("묵,찌,빠로 입력하세요")
+        mjb()
+
+
+mjb()
