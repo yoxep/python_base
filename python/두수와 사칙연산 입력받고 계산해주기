@@ -1,0 +1,37 @@
+print("두 수 입력받고 사칙연산하는 프로그램입니다!")
+a=int(input("첫번째 숫자를 입력하세요"))
+giho=input("연산자를 입력하세요")
+b=int(input("두번째 숫자를 입력하세요"))
+
+def sum(n1,n2):
+    c=n1+n2
+    return print("덧셈 결과는 {0} 입니다".format(c))
+
+def min(n1,n2):
+    c=n1-n2
+    return print("뺄셈 결과는 {0} 입니다".format(c))
+
+def mul(n1,n2):
+    c=n1*n2
+    return print("곱셈 결과는 {0} 입니다".format(c))
+
+def div(n1,n2):
+    c=n1/n2
+    return print("나눗셈 결과는 {0} 입니다".format(c))
+
+
+if giho == "+":
+    sum(a,b)
+    
+elif giho =="-":
+     min(a,b)
+
+elif giho =="*":
+     mul(a,b)
+
+elif giho =="/":
+     div(a,b)
+
+else :
+    print("연산은 +,-,*,/만 가능합니다")
+    
