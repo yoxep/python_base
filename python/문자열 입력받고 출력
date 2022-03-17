@@ -2,7 +2,7 @@ def mjb():
     game=input("묵 찌 빠 중 하나를 내주세요, 종료하시려면 엔터를 눌러주세요")
     if game == "묵":
         print("묵을 내셨습니다")
-        mjb()
+        mjb() #재귀호출
     
     elif game == "찌":
         print("찌를 내셨습니다")
